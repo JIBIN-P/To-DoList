@@ -4,5 +4,8 @@ $("li").on("click", function() {
 });
 
 $("span").on("click", function(){
-   $(this).parent().remove();
+   $(this).fadeOut("fast", function(){
+      $(this).parent().remove();
+   });
 });
+
