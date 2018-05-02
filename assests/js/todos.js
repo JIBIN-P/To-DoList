@@ -4,8 +4,10 @@ $("li").on("click", function() {
 });
 
 $("span").on("click", function(){
-   $(this).fadeOut("fast", function(){
-      $(this).parent().remove();
+   $(this).parent().fadeOut("fast", function(){
+      //Now we are working with the parent() element 
+      //which is the li so we can directly remove it from the DOM
+      $(this).remove();
    });
 });
 
