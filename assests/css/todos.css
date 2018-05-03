@@ -4,8 +4,24 @@ body {
 
 .container {
    width: 300px;
-   background: beige;
-   margin: 8px;
+   background: #f7f7f7;
+   margin: 80px 20px;
+   box-shadow: 0 0 3px rgba(0, 0, 0, 0.2);
+}
+
+.container h1 {
+   background: steelblue;
+   color: white;
+   padding-left: 15px;
+}
+
+.container h1 input ul li {
+   padding-left: 15px;
+}
+
+input {
+   margin-left: 15px;
+   border: none;
 }
 
 .completed {
