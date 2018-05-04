@@ -28,5 +28,5 @@ $("input[type='text']").on("keypress", function (event){
 
 // For toggling the + button
 $(".fa-plus-circle").on("click", function(){
-   
+   $("input[type='text']").fadeToggle();
 });

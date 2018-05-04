@@ -5,26 +5,6 @@ body {
    background: linear-gradient(to right, #89253e, #3a6186); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
-.container {
-   width: 300px;
-   background: #f7f7f7;
-   margin: 80px 20px;
-   box-shadow: 0 0 3px rgba(0, 0, 0, 0.2);
-}
-
-.completed {
-   text-decoration: line-through;
-   color: gray;
-}
-
-.fa-plus-circle {
-   float: right;
-}
-
-.fa-trash:before {
-    content: unset;
-}
-
 h1 {
    /* background: #2980b9; */
    background: #200122;  /* fallback for old browsers */
@@ -88,4 +68,20 @@ span {
 li:hover span {
    width: 40px;
    opacity: 1.0;
+}
+
+.container {
+   width: 300px;
+   background: #f7f7f7;
+   margin: 80px 20px;
+   box-shadow: 0 0 3px rgba(0, 0, 0, 0.2);
+}
+
+.completed {
+   text-decoration: line-through;
+   color: gray;
+}
+
+.fa-plus-circle {
+   float: right;
 }
