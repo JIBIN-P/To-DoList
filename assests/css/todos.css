@@ -1,5 +1,8 @@
 body {
-   background: burlywood;
+   font-family: 'Roboto', sans-serif;
+   background: #200122;  /* fallback for old browsers */
+   background: -webkit-linear-gradient(to right, #6f0000, #200122);  /* Chrome 10-25, Safari 5.1-6 */
+   background: linear-gradient(to right, #6f0000, #200122); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
 .container {
@@ -9,19 +12,48 @@ body {
    box-shadow: 0 0 3px rgba(0, 0, 0, 0.2);
 }
 
-.container h1 {
-   background: steelblue;
+h1 {
+   background: #2980b9;
    color: white;
-   padding-left: 15px;
+   margin: 0;
+   padding: 10px 20px;
+   text-transform: uppercase;
+   font-size: 24px;
+   font-weight: normal;
 }
 
-.container h1 input ul li {
-   padding-left: 15px;
+ul {
+   padding: 10px 20px;
+   list-style: none;
+   margin: 0;
+   padding: 0;
+}
+
+li {
+   background: #fff;
+   height: 40px;
+   line-height: 40px;
+   color: #666;
+}
+
+li:nth-child(2n) {
+   background: #f7f7f7;
 }
 
 input {
-   margin-left: 15px;
+   font-size: 18px;
+   background: #f7f7f7;
+   width: 100%;
+   padding: 13px 13px 13px 20px;
+   box-sizing: border-box;
+   color: #2980b9;
    border: none;
+}
+
+input:focus {
+   background: white;
+   border: 3px solid #2980b9;
+   outline: none;
 }
 
 .completed {
