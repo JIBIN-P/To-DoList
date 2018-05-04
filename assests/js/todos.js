@@ -22,6 +22,11 @@ $("input[type='text']").on("keypress", function (event){
    if (event.which == 13){
       let todoText = $(this).val();
       $(this).val("");
-      $("ul").append("<li><span>X</span> " + todoText + "</li>");
+      $("ul").append("<li><span><i class='fa fa-trash' aria-hidden='true'></i></span> " + todoText + "</li>");
    }
+});
+
+// For toggling the + button
+$(".fa-plus-circle").on("click", function(){
+   
 });
